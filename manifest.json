@@ -1,0 +1,10 @@
+{
+  "id": "outline-motion",
+  "name": "Outline Motion",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Lines in the editor glide instead of jumping: when you fold, unfold, move, indent, add or delete lines, each line slides from its old position to its new one and the cursor moves smoothly. Animation only; your notes are never changed.",
+  "author": "马自立",
+  "authorUrl": "https://github.com/MatsuriMW",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,20 @@
+/* 光标：换位置时滑过去，不瞬移。平时快一点，行在滑的时候（om-moving）和行同速 */
+.markdown-source-view.mod-cm6 .cm-cursorLayer .cm-cursor {
+	transition: left 70ms ease-out, top 70ms ease-out;
+}
+
+.markdown-source-view.mod-cm6 .cm-editor.om-moving .cm-cursorLayer .cm-cursor {
+	--om-ms: 200ms; /* 和 main.js 的 MS 一致 */
+	transition: left var(--om-ms) cubic-bezier(0.2, 0.8, 0.2, 1), top var(--om-ms) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* 淡出中的旧行放在这个浮层里：盖在内容区上，不接收点击，不占高度 */
+.markdown-source-view.mod-cm6 .cm-scroller > .om-ghosts {
+	position: absolute;
+	min-height: 0;
+	height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	pointer-events: none;
+	user-select: none;
+}
