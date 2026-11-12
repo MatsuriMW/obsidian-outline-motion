@@ -18,7 +18,7 @@ Lines in the Obsidian editor glide instead of jumping. When you fold, unfold, mo
 
 It works with any command or plugin that changes the text or folds, because it does not hook specific commands: it compares where each visible line was before an edit with where it is after.
 
-There are no settings and no commands. Animations last 200 ms. Nothing is animated while you are composing with an input method, or when the whole document is replaced (switching notes).
+Animations last 200 ms. Nothing is animated while you are composing with an input method. Opening and switching notes is not animated by default; you can turn on "Animate when opening and switching notes" in settings if you want it.
 
 Tested on desktop. It is not marked desktop-only, but it has not been tested on mobile yet.
 
@@ -55,7 +55,7 @@ To follow new features, send feedback or keep up with progress, follow me on Twi
 
 不认具体命令，只比较每个可见行改动前后的位置，所以别的插件做的折叠、移动也都有动画。
 
-没有设置项，也没有命令。动画时长 200 毫秒。输入法组字中、整篇文档被替换（切换笔记）时不做动画。
+动画时长 200 毫秒。输入法组字中不做动画。打开和切换文档时默认没有动效；如果有需要，可以在设置里打开「在打开和切换文档时有动效」。
 
 在桌面端测过；没有标成仅桌面端，但还没在手机上测过。
 
